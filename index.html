@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Free AI Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>🤖 Welcome to My AI Hub</h1>
+<p>Select any AI tool below:</p>
+
+<div class="buttons">
+  <button onclick="showSection('chatbot')">💬 Chatbot</button>
+  <button onclick="showSection('image')">🎨 Image Generator</button>
+  <button onclick="showSection('voice')">🎤 Voice Assistant</button>
+  <button onclick="showSection('writer')">✍️ Content Writer</button>
+</div>
+
+<section id="chatbot" class="section">
+<h2>💬 Chatbot</h2>
+<textarea id="chatInput" placeholder="Ask something..."></textarea>
+<button onclick="chat()">Send</button>
+<pre id="chatOutput"></pre>
+</section>
+
+<section id="image" class="section">
+<h2>🎨 Image Generator</h2>
+<input id="imgPrompt" placeholder="Describe your image..." />
+<button onclick="generateImage()">Generate</button>
+<img id="genImage" />
+</section>
+
+<section id="voice" class="section">
+<h2>🎤 Voice Assistant</h2>
+<button onclick="startListening()">🎙️ Speak</button>
+<textarea id="voiceText" placeholder="Your speech will appear here..."></textarea>
+<button onclick="speak()">🔊 Talk Back</button>
+</section>
+
+<section id="writer" class="section">
+<h2>✍️ AI Content Writer</h2>
+<input id="writeTopic" placeholder="Enter topic..." />
+<button onclick="writeContent()">Generate Article</button>
+<pre id="writeOutput"></pre>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
