@@ -1,0 +1,7 @@
+body { font-family: Arial; text-align: center; background: #f0f3f8; color: #333; }
+.buttons { margin: 20px; }
+button { margin: 8px; padding: 10px 15px; border: none; border-radius: 8px; background: #0078ff; color: white; cursor: pointer; }
+button:hover { background: #005ecb; }
+.section { display: none; margin-top: 20px; background: white; padding: 15px; border-radius: 10px; width: 80%; margin: auto; box-shadow: 0 0 8px rgba(0,0,0,0.1);}
+textarea, input { width: 80%; margin: 10px 0; padding: 10px; }
+img { max-width: 300px; margin-top: 15px; border-radius: 10px; }
